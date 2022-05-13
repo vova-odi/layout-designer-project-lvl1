@@ -27,9 +27,10 @@
   src: url('../assets/fonts/Neucha-Regular.ttf');
 }
 
-/* Общие стили */
+/*---------------- Общие стили ----------------*/
 
 body {
+  font-family: OpenSans, sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark);
@@ -70,8 +71,29 @@ h3 {
   margin: 0;
 }
 
-.mb-20 {
-  margin-bottom: 20px;
+.orange {
+  color: var(--primary);
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
 }
 
 .bg-image::before {
@@ -128,16 +150,11 @@ h3 {
 
 .text-content {
   margin-bottom: 0;
+
   break-inside: avoid;
-
-  font-family: OpenSans, sans-serif; 
 }
 
-.orange {
-  color: var(--primary);
-}
-
-/* Секция header */
+/*---------------- Секция header ----------------*/
 
 .header-section {
   position: relative;
@@ -168,7 +185,6 @@ h3 {
   width: 148px;
   height: 49px;
 
-  font-family: OpenSans, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -177,7 +193,7 @@ h3 {
   background-color: var(--primary);
 }
 
-/* Секция video */
+/*---------------- Секция video ----------------*/
 
 .video-section {
   height: 814px;
@@ -185,8 +201,6 @@ h3 {
 
 .video-section p {
   margin-top: 27px;
-
-  font-family: OpenSans, sans-serif;
 }
 
 .video-block {
@@ -201,12 +215,12 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-/* Секция menu */
+/*---------------- Секция menu ----------------*/
 
 .menu-section {
   padding-top: 200px;
-  position: relative;
 
+  position: relative;
   height: 991px;
 }
 
@@ -218,25 +232,13 @@ h3 {
   content: '';  
 }
 
-.menu-block {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .menu-block-top {
   margin-bottom: 20px;
-  width: 100%;
   height: 323px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .menu-block-bot {
-  width: 100%;
   height: 348px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .menu-header {
@@ -255,15 +257,22 @@ h3 {
   display: block;
   width: 350px;
   box-sizing: border-box;
-}
 
-.menu-link {
   text-decoration: none;
 
   background-color: var(--light);
 }
 
-.menu-link-number {
+.menu-card:hover {
+  background-color: var(--primary);
+}
+
+.menu-card:hover p,
+.menu-card:hover h3 {
+  color: var(--white);
+}
+
+.menu-number {
   margin-top: 0;
   margin-bottom: 40px;
 
@@ -273,17 +282,16 @@ h3 {
   color: var(--primary-dark);
 }
 
-.menu-link-header {
-  margin: 0;
-
-  color: var(--primary)
-}
-
-.menu-link-content {
-  font-family: OpenSans, sans-serif;
-  color: var(--dark);
-}
-
 .mt-12 {
   margin-top: 12px;
+}
+
+/*------------------ Контентные секции ------------------*/
+
+
+/*------------------ Эффект ИКЕА ------------------*/
+
+.ikea-section {
+  height: 905px;
+  position: relative;
 }
