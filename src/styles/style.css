@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --white: #fff;
   --white50: #d7ccc0;
@@ -29,5 +33,299 @@
 
 /* ---------------- Общие стили ---------------- */
 
+body {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+
+  color: var(--dark);
+  font-size: 16px;
+  font-family: OpenSans, sans-serif;
+  line-height: 1.6;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  z-index: 1;
+  margin: 0;
+
+  color: var(--primary);
+  font-family: Neucha, serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h1 span,
+h2 span {
+  color: var(--dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+  max-width: 1110px;
+
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.bg-img {
+  position: relative;
+}
+
+.bg-img::before {
+  position: absolute;
+
+  background: url(../assets/images/background.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: "";
+}
+
+.text-block {
+  display: flex;
+}
+
+.text-col {
+  flex-basis: 50%;
+}
+
+.text-block .text-col:nth-child(1) {
+  margin-right: 30px;
+}
 
 
+/* Header */
+
+header {
+  background-color: var(--light);
+}
+
+header .container {
+  height: 100vh;
+  min-height: 900px;
+}
+
+.header-img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+}
+
+.header-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 24px;
+
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: var(--primary);
+}
+
+/* Video */
+
+.video-section .container {
+  align-items: center;
+
+  height: 807px;
+}
+
+.video-section h2 {
+  margin-bottom: 27px;
+
+  text-align: center;
+}
+
+.video-container {
+  margin-top: 30px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+/* Navigation */
+
+.navigation {
+  background-color: var(--primary-dark);
+}
+
+.navigation .container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 200px;
+}
+
+.navigation h2 {
+  font-size: 52px;
+  width: 350px;
+}
+
+.navigation h2 span {
+  color: var(--white);
+}
+
+.card {
+  display: block;
+  width: 350px;
+
+  padding: 24px;
+
+  background-color: var(--white);
+}
+
+.card:nth-child(n+4) {
+  margin-top: 20px;
+}
+
+.card-num {
+  margin-bottom: 40px;
+
+  color: var(--primary-dark);
+  font-size: 64px;
+  font-family: Neucha, serif;
+  line-height: 1;
+}
+
+.card-term {
+  margin-top: 13px;
+  color: var(--dark);
+}
+
+.card:hover {
+  background-color: var(--primary);
+}
+
+.card:hover h3,
+.card:hover p {
+  color: var(--white);
+}
+
+/* Main */
+
+.section-top {
+  display: flex;
+
+  font-family: Neucha, serif;
+}
+
+.section-img {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.cog-bias {
+  font-size: 24px;
+}
+
+.cog-bias-name {
+  margin-bottom: 30px;
+}
+
+.cog-bias-term {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.section-subheader {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  font-family: OpenSans, sans-serif;
+  text-transform: uppercase;
+}
+
+/* odd sections */
+
+.bg-color:nth-child(odd) {
+  background-color: var(--light);
+}
+
+.section-main:nth-child(odd) .section-img {
+  margin-right: 30px;
+}
+
+.section-main:nth-child(odd) .cog-bias {
+  color: var(--dark50);
+}
+
+.section-main:nth-child(odd) .cog-bias-name,
+.section-main:nth-child(odd) .cog-bias-term {
+  color: var(--dark);
+}
+
+.section-main:nth-child(odd) .section-subheader {
+  color: var(--white);
+
+  background-color: var(--brown);
+}
+
+/* even sections */
+
+.bg-color:nth-child(even) {
+  background-color: var(--brown);
+}
+
+.section-main:nth-child(even) .section-top {
+  flex-direction: row-reverse;
+}
+
+.section-main:nth-child(even) .section-img {
+  margin-left: 30px;
+}
+
+.section-main:nth-child(even) .cog-bias {
+  color: var(--white50);
+}
+
+.section-main:nth-child(even) .cog-bias-name,
+.section-main:nth-child(even) .cog-bias-term {
+  color: var(--white);
+}
+
+.section-main:nth-child(even) .section-subheader {
+  color: var(--brown);
+
+  background-color: var(--white);
+}
+
+.section-main:nth-child(even) .text-block {
+  color: var(--white);
+}
