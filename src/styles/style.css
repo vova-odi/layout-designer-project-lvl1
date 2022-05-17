@@ -54,6 +54,7 @@ h2,
 h3,
 h4 {
   z-index: 1;
+
   margin: 0;
 
   color: var(--primary);
@@ -165,6 +166,10 @@ header .container {
 
 /* Video */
 
+footer .container {
+  align-items: center;
+}
+
 .video-section .container {
   align-items: center;
 
@@ -180,7 +185,7 @@ header .container {
 .video-container {
   margin-top: 30px;
 
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 /* Navigation */
@@ -236,6 +241,20 @@ header .container {
   background-color: var(--primary);
 }
 
+.about p {
+  margin-bottom: 1em;
+}
+
+.mailing h3 {
+  flex-basis: 50%;
+}
+
+.mailing h3,
+.mailing p,
+.mailing a {
+  color: var(--white);
+}
+
 .card:hover h3,
 .card:hover p {
   color: var(--white);
@@ -250,7 +269,7 @@ header .container {
 }
 
 .section-img {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 .cog-bias {
@@ -335,12 +354,6 @@ header .container {
   color: var(--white);
 }
 
-/* Footer */
-
-footer .container {
-  align-items: center;
-}
-
 /* email */
 
 .mailing {
@@ -353,19 +366,9 @@ footer .container {
   background-color: var(--primary-dark);
 }
 
-.mailing h3 {
-  flex-basis: 50%;
-}
-
 .input-container {
   flex-basis: 50%;
   align-self: center;
-}
-
-.mailing h3,
-.mailing p,
-.mailing a {
-  color: var(--white);
 }
 
 .input-header {
@@ -443,10 +446,6 @@ footer .container {
   margin-top: 76px;
 
   text-align: center;
-}
-
-.about p {
-  margin-bottom: 1em;
 }
 
 .about a {
