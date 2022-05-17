@@ -54,7 +54,6 @@ h2,
 h3,
 h4 {
   z-index: 1;
-
   margin: 0;
 
   color: var(--primary);
@@ -166,10 +165,6 @@ header .container {
 
 /* Video */
 
-footer .container {
-  align-items: center;
-}
-
 .video-section .container {
   align-items: center;
 
@@ -239,20 +234,6 @@ footer .container {
 
 .card:hover {
   background-color: var(--primary);
-}
-
-.about p {
-  margin-bottom: 1em;
-}
-
-.mailing h3 {
-  flex-basis: 50%;
-}
-
-.mailing h3,
-.mailing p,
-.mailing a {
-  color: var(--white);
 }
 
 .card:hover h3,
@@ -354,6 +335,12 @@ footer .container {
   color: var(--white);
 }
 
+/* Footer */
+
+footer .container {
+  align-items: center;
+}
+
 /* email */
 
 .mailing {
@@ -366,9 +353,19 @@ footer .container {
   background-color: var(--primary-dark);
 }
 
+.mailing h3 {
+  flex-basis: 50%;
+}
+
 .input-container {
   flex-basis: 50%;
   align-self: center;
+}
+
+.mailing h3,
+.mailing p,
+.mailing a {
+  color: var(--white);
 }
 
 .input-header {
@@ -446,6 +443,10 @@ footer .container {
   margin-top: 76px;
 
   text-align: center;
+}
+
+.about p {
+  margin-bottom: 1em;
 }
 
 .about a {
